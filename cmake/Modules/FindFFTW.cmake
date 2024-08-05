@@ -20,15 +20,10 @@ find_library (FFTW_LIBRARIES NAMES fftw3f
     HINTS ${PC_FFTW_LIBDIR} ${PC_FFTW_LIBRARY_DIRS})
 
 
-find_library (FFTWF_LIBRARIES NAMES fftwf
-    HINTS ${PC_FFTW_LIBDIR} ${PC_FFTW_LIBRARY_DIRS})
-
-
-
 
 # handle the QUIETLY and REQUIRED arguments and set FFTW_FOUND to TRUE if
 # all listed variables are TRUE
 include (FindPackageHandleStandardArgs)
-find_package_handle_standard_args (FFTW DEFAULT_MSG FFTW_LIBRARIES FFTWF_LIBRARIES FFTW_INCLUDES)
+find_package_handle_standard_args (FFTW DEFAULT_MSG FFTW_LIBRARIES FFTW_INCLUDES)
 
-mark_as_advanced (FFTW_LIBRARIES FFTWF_LIBRARIES FFTW_INCLUDES)
+mark_as_advanced (FFTW_LIBRARIES FFTW_INCLUDES)
