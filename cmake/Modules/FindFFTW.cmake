@@ -22,7 +22,7 @@ find_library (FFTW_LIBRARIES NAMES fftw3f
 find_library (FFTW3_LIBRARIES NAMES fftw3
     HINTS ${PC_FFTW_LIBDIR} ${PC_FFTW_LIBRARY_DIRS})
 
-link_libraries(PkgConfig::FFTW3) 
+ 
 
 
 # handle the QUIETLY and REQUIRED arguments and set FFTW_FOUND to TRUE if
