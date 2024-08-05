@@ -24,6 +24,10 @@
 #include "samplesource.h"
 #include "traceplot.h"
 
+
+#define __SIZE_TYPE__ long long unsigned int
+
+
 TracePlot::TracePlot(std::shared_ptr<AbstractSampleSource> source) : Plot(source) {
     connect(this, &TracePlot::imageReady, this, &TracePlot::handleImage);
 }
