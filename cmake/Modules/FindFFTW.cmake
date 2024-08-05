@@ -13,6 +13,12 @@ endif (FFTW_INCLUDES)
 find_package(PkgConfig)
 pkg_check_modules(PC_FFTW QUIET fftw3f)
 
+
+find_package(PkgConfig)
+pkg_check_modules(PC_FFTW3 QUIET fftw3)
+
+
+
 find_path (FFTW_INCLUDES fftw3.h
     HINTS ${PC_FFTW_INCLUDEDIR}  ${PC_FFTW_INCLUDE_DIRS})
 
