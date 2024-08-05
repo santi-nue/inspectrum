@@ -19,6 +19,8 @@ find_path (FFTW_INCLUDES fftw3.h
 find_library (FFTW_LIBRARIES NAMES fftw3f
     HINTS ${PC_FFTW_LIBDIR} ${PC_FFTW_LIBRARY_DIRS})
 
+find_library (FFTW3_LIBRARIES NAMES fftw3
+    HINTS ${PC_FFTW_LIBDIR} ${PC_FFTW_LIBRARY_DIRS})
 
 
 # handle the QUIETLY and REQUIRED arguments and set FFTW_FOUND to TRUE if
